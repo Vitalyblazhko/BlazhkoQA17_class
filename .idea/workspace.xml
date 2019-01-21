@@ -24,7 +24,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FirstJavaProject/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,15 +34,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/openChromeBrowser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="528">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,6 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/FirstJavaProject/build.gradle" />
         <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/openChromeBrowser.java" />
+        <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java" />
+        <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java" />
       </list>
     </option>
   </component>
@@ -80,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,16 +113,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="FirstJavaProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstJavaProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548088631716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548095089083" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -126,7 +147,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.OpenFirefoxBrowser">
+    <configuration name="OpenChromeBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstJavaProject_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenChromeBrowser" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenFirefoxBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstJavaProject_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenFirefoxBrowser" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="openChromeBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstJavaProject_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -139,6 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OpenFirefoxBrowser" />
+        <item itemvalue="TestNG.OpenChromeBrowser" />
         <item itemvalue="TestNG.openChromeBrowser" />
       </list>
     </recent_temporary>
@@ -157,51 +200,69 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="openChromeBrowser - 2019.01.21 at 18h 08m 24s.xml">
-      <configuration name="openChromeBrowser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="openChromeBrowser - 2019.01.21 at 18h 09m 54s.xml">
-      <configuration name="openChromeBrowser" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="openChromeBrowser - 2019.01.21 at 18h 10m 26s.xml">
       <configuration name="openChromeBrowser" configurationId="TestNG" />
     </history-entry>
     <history-entry file="openChromeBrowser - 2019.01.21 at 18h 13m 07s.xml">
       <configuration name="openChromeBrowser" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="openChromeBrowser - 2019.01.21 at 20h 04m 44s.xml">
+      <configuration name="openChromeBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 05m 20s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 05m 50s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenChromeBrowser - 2019.01.21 at 20h 06m 29s.xml">
+      <configuration name="OpenChromeBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 06m 58s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 07m 27s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 08m 03s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 19m 36s.xml">
+      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="145" width="1400" height="632" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21786633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22177419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -212,14 +273,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/openChromeBrowser.java">
+    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="528">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
           </folding>
         </state>
       </provider>
