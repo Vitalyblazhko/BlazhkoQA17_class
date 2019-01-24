@@ -24,14 +24,19 @@ public class OpenChromeBrowser {
     public void chromeBrowserTest(){
         wd.get("http://google.com");
         //Type in search bar
+
+        wd.findElement(By.linkText("English")).click();
         wd.findElement(By.name("q")).click();
         wd.findElement(By.name("q")).clear();
         wd.findElement(By.name("q")).sendKeys("selenium");
+        wd.findElement(By.name("btnK")).click();
+        wd.findElement(By.linkText("Images")).click();
+
     }
 
     @AfterClass
     public void tearDown() throws InterruptedException {
-        Thread.sleep(3000);
-        wd.quit();
+       // Thread.sleep(3000);
+       // wd.quit();
     }
 }

@@ -19,15 +19,40 @@ public class OpenFirefoxBrowser {
 
     @Test
     public void testEBaySearch(){
-        wd.get("http://ebay.com");
+        //open site
+        openSite();
+        //type anything in search bar
+        fillSearchBar();
+        //click search button
+        clickSearchButton();
+    }
+
+
+    @Test
+    public void testEBayFilter(){
+        openSite();
+        fillSearchBar();
+        clickSearchButton();
+        filterItemsByAuction();
+    }
+
+
+    public void filterItemsByAuction() {
+        wd.findElement(By.linkText("Auction")).click();
+    }
+
+    public void clickSearchButton() {
+        wd.findElement(By.id("gh-btn")).click();
+    }
+
+    public void fillSearchBar() {
         wd.findElement(By.id("gh-ac")).click();
         wd.findElement(By.id("gh-ac")).clear();
-
         wd.findElement(By.id("gh-ac")).sendKeys("glasses");
+    }
 
-        wd.findElement(By.id("gh-btn")).click();
-
-
+    public void openSite() {
+        wd.get("http://ebay.com");
     }
 
     @AfterMethod

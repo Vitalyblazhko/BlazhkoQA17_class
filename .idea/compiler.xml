@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="FirstJavaProject_main" target="1.8" />
       <module name="FirstJavaProject_test" target="1.8" />
+      <module name="SecondSeleniumProject_main" target="1.8" />
+      <module name="SecondSeleniumProject_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

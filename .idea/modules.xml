@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstJavaProject.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstJavaProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstJavaProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstJavaProject_main.iml" group="FirstJavaProject" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstJavaProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstJavaProject_test.iml" group="FirstJavaProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SecondSeleniumProject.iml" filepath="$PROJECT_DIR$/.idea/modules/SecondSeleniumProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SecondSeleniumProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SecondSeleniumProject_main.iml" group="SecondSeleniumProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SecondSeleniumProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SecondSeleniumProject_test.iml" group="SecondSeleniumProject" />
     </modules>
   </component>
 </project>

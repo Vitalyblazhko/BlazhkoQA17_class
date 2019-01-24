@@ -5,6 +5,9 @@
     <ignored path="$PROJECT_DIR$/FirstJavaProject/.gradle/" />
     <ignored path="$PROJECT_DIR$/FirstJavaProject/build/" />
     <ignored path="$PROJECT_DIR$/FirstJavaProject/out/" />
+    <ignored path="$PROJECT_DIR$/SecondSeleniumProject/.gradle/" />
+    <ignored path="$PROJECT_DIR$/SecondSeleniumProject/build/" />
+    <ignored path="$PROJECT_DIR$/SecondSeleniumProject/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/FirstJavaProject">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/SecondSeleniumProject">
       <ProjectState />
     </projectState>
   </component>
@@ -25,36 +31,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FirstJavaProject/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java">
+        <entry file="file://$PROJECT_DIR$/SecondSeleniumProject/src/test/java/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="540">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,12 +64,15 @@
       <list>
         <option value="$PROJECT_DIR$/FirstJavaProject/build.gradle" />
         <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/openChromeBrowser.java" />
-        <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java" />
         <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java" />
+        <option value="$PROJECT_DIR$/SecondSeleniumProject/build.gradle" />
+        <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java" />
+        <option value="$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenWikiInChrome.java" />
+        <option value="$PROJECT_DIR$/SecondSeleniumProject/src/test/java/LoginTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="63" />
     <option name="y" value="145" />
     <option name="width" value="1400" />
@@ -94,46 +84,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="FirstJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstJavaProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SecondSeleniumProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="FirstJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstJavaProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SecondSeleniumProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstJavaProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstJavaProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SecondSeleniumProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548095089083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548354128634" />
+    <property name="extract.method.default.visibility" value="public" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,7 +131,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.OpenFirefoxBrowser">
+  <component name="RunManager" selected="TestNG.LoginTest.testLogin">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecondSeleniumProject_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SecondSeleniumProject_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenChromeBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstJavaProject_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -158,20 +164,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenFirefoxBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenChromeBrowser.chromeBrowserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstJavaProject_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OpenFirefoxBrowser" />
+      <option name="MAIN_CLASS_NAME" value="OpenChromeBrowser" />
+      <option name="METHOD_NAME" value="chromeBrowserTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="openChromeBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenWikiInChrome" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstJavaProject_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="openChromeBrowser" />
+      <option name="MAIN_CLASS_NAME" value="OpenWikiInChrome" />
       <properties />
       <listeners />
       <method v="2">
@@ -180,9 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.OpenFirefoxBrowser" />
+        <item itemvalue="TestNG.LoginTest.testLogin" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.OpenWikiInChrome" />
         <item itemvalue="TestNG.OpenChromeBrowser" />
-        <item itemvalue="TestNG.openChromeBrowser" />
+        <item itemvalue="TestNG.OpenChromeBrowser.chromeBrowserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -200,42 +210,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="openChromeBrowser - 2019.01.21 at 18h 10m 26s.xml">
-      <configuration name="openChromeBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 44m 23s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="openChromeBrowser - 2019.01.21 at 18h 13m 07s.xml">
-      <configuration name="openChromeBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 44m 46s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="openChromeBrowser - 2019.01.21 at 20h 04m 44s.xml">
-      <configuration name="openChromeBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 45m 39s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 05m 20s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 46m 31s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 05m 50s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 46m 59s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenChromeBrowser - 2019.01.21 at 20h 06m 29s.xml">
-      <configuration name="OpenChromeBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 47m 27s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 06m 58s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="OpenWikiInChrome - 2019.01.24 at 19h 47m 50s.xml">
+      <configuration name="OpenWikiInChrome" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 07m 27s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="LoginTest - 2019.01.24 at 20h 11m 09s.xml">
+      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 08m 03s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="LoginTest_testLogin - 2019.01.24 at 20h 15m 32s.xml">
+      <configuration name="LoginTest.testLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OpenFirefoxBrowser - 2019.01.21 at 20h 19m 36s.xml">
-      <configuration name="OpenFirefoxBrowser" configurationId="TestNG" />
+    <history-entry file="LoginTest_testLogin - 2019.01.24 at 20h 16m 58s.xml">
+      <configuration name="LoginTest.testLogin" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21786633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19023137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -244,8 +254,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22177419" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22177419" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -253,7 +263,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3293011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -265,32 +275,73 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FirstJavaProject/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java">
+    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenWikiInChrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java">
+    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenChromeBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="477">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="41" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondSeleniumProject/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirstJavaProject/src/test/java/OpenFirefoxBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondSeleniumProject/src/test/java/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -347,10 +398,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>SecondSeleniumProject|FirstJavaProject</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -370,6 +423,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: com.beust:jcommander:1.72</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
