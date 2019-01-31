@@ -23,7 +23,6 @@ public class TestBase {
     }
 
     public void fillLofinForm() {
-        wd.findElement(By.className("header-button-secondary")).click();
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
         wd.findElement(By.name("user")).sendKeys("elena.telran@yahoo.com");
@@ -34,25 +33,26 @@ public class TestBase {
 
     }
 
+    public void logInLink(){
+        wd.findElement(By.cssSelector("a.header-button-secondary")).click();
+    }
+
     public void openSite(String url) {
         wd.get(url);
     }
 
     public void logIn() {
+        logInLink();
         fillLofinForm();
         confirmLogin();
-    }
-
-    @AfterClass
-    public void tearDown(){
-        wd.quit();
+        goToBoard();
     }
 
     public boolean isUserLoggedIn() {
         return isElementPresent(By.cssSelector("img.member-avatar"));
     }
 
-    private boolean isElementPresent(By by) {
+    public boolean isElementPresent(By by) {
         try {
             wd.findElement(by);
             return true;
@@ -60,4 +60,23 @@ public class TestBase {
             return false;
         }
     }
+
+    public void goToBoard() {
+        wd.findElement(By.linkText("Go to Your Boards")).click();
+    }
+
+    protected void clickOnAvatar() {
+        wd.findElement(By.cssSelector("img.member-avatar")).click();
+    }
+
+    protected void clickOnLogOutButton() {
+        wd.findElement(By.cssSelector("a.js-logout")).click();
+    }
+
+    @AfterClass
+    public void tearDown(){
+        wd.quit();
+    }
+
+
 }

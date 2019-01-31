@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {
@@ -11,5 +9,6 @@ public class LoginTest extends TestBase {
         fillLofinForm();
         confirmLogin();
     }
+
 
 }
