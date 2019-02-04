@@ -1,8 +1,7 @@
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LogOut extends TestBase{
+public class TeamCreationTest extends TestBase {
     @BeforeMethod
     public void ensurePrecondition(){
         if(!app.isUserLoggedIn()){
@@ -11,11 +10,13 @@ public class LogOut extends TestBase{
     }
 
     @Test
-    public void logOutTest(){
-        app.clickOnAvatar();
-        app.clickOnLogOutButton();
-
-        Assert.assertFalse(app.isUserLoggedIn());
+    public void teamCreationFromLeftNavMenuTest(){
+        app.clickOnCreateTeamButtonOnNavMenu();
+        app.fillTeamCreationForm();
+        app.submitTeamCreation();
     }
+
+
+
 
 }
