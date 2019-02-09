@@ -9,6 +9,7 @@ public class ApplicationManager {
     static BoardHelper boardHelper;
     static TeamHelper teamHelper;
     static SessionHelper sessionHelper;
+    static ListHelper listHelper;
     WebDriver wd;
 
     public void start() {
@@ -19,18 +20,20 @@ public class ApplicationManager {
         ApplicationManager.sessionHelper = new SessionHelper(wd);
         ApplicationManager.boardHelper = new BoardHelper(wd);
         ApplicationManager.teamHelper = new TeamHelper(wd);
-    }
-
-    public static void openSite(String url) {
-        wd.get(url);
+        ApplicationManager.listHelper = new ListHelper(wd);
     }
 
     public void stop() {
         wd.quit();
     }
 
+    public void openSite(String url) {
+        wd.get(url);
+    }
 
-
+    public void returnToPreviousPage() {
+        wd.navigate().back();
+    }
 
     public BoardHelper getBoardHelper() {
         return boardHelper;
@@ -42,5 +45,9 @@ public class ApplicationManager {
 
     public static SessionHelper getSessionHelper() {
         return sessionHelper;
+    }
+
+    public static ListHelper getListHelper() {
+        return listHelper;
     }
 }

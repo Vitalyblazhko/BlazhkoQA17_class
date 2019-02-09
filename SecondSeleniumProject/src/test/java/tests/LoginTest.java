@@ -1,15 +1,23 @@
 package tests;
 
-import manager.TestBase;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-public class LoginTest extends TestBase {
+
+public class LogInTest extends TestBase {
+
+    @BeforeMethod
+    public void ensurePrecondition(){
+        if(app.getSessionHelper().isUserLoggedIn()){
+            app.getSessionHelper().logOut();
+        };
+    }
 
     @Test
     public void testLogin() {
 
-        TestBase.app.getSessionHelper().logInLink();
-        TestBase.app.getSessionHelper().fillLofinForm();
-        TestBase.app.getSessionHelper().confirmLogin();
+        app.getSessionHelper().clickLoginButton();
+        app.getSessionHelper().fillLoginForm("elena.telran@yahoo.com", "12345.com");
+        app.getSessionHelper().confirmLogin();
     }
 
 

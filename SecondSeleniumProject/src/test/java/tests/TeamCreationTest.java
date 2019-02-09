@@ -1,10 +1,10 @@
 package tests;
 
-import manager.TestBase;
 import models.Team;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class TeamCreationTest extends TestBase {
 
@@ -18,11 +18,10 @@ public class TeamCreationTest extends TestBase {
     @Test
     public void teamCreationFromLeftNavMenuTest(){
         TestBase.app.getTeamHelper().clickOnCreateTeamButtonOnNavMenu();
-        TestBase.app.getTeamHelper().fillTeamCreationForm(new Team("newTeam", "newTeam"));
+        TestBase.app.getTeamHelper().fillTeamCreationForm(new Team().
+                setTeamName("newTeam" + TimeUnit.SECONDS).
+                setTeamDescr("newTeam" + TimeUnit.SECONDS));
         TestBase.app.getTeamHelper().submitTeamCreation();
     }
-
-
-
 
 }

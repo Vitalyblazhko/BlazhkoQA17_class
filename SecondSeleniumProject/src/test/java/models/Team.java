@@ -9,13 +9,16 @@ public class Team {
         this.teamDescr = teamDescr;
     }
 
+    public Team() {}
+
     public Team setTeamName(String teamName) {
         this.teamName = teamName;
         return this;
     }
 
-    public void setTeamDescr(String teamDescr) {
+    public Team setTeamDescr(String teamDescr) {
         this.teamDescr = teamDescr;
+        return this;
     }
 
     public String getTeamName() {

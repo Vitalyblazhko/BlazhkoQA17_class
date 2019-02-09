@@ -1,9 +1,6 @@
 package manager;
 
-import manager.BoardHelper;
-import manager.HelperBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class SessionHelper extends HelperBase {
@@ -12,64 +9,42 @@ public class SessionHelper extends HelperBase {
         super(wd);
     }
 
-
-
     public void confirmLogin() {
-        wd.findElement(By.id("login")).click();
+        click(By.cssSelector("#login"));
     }
 
-    public void fillLofinForm() {
-        TeamHelper.click(By.id("user"));
-        TeamHelper.clear(By.id("user"));
-        sendKeysName(By.id("user"));
-
-        TeamHelper.click(By.name("password"));
-        TeamHelper.clear(By.name("password"));
-        sendKeysPassword(By.name("password"));
-
+    public void fillLoginForm(String user, String password) {
+        type(By.cssSelector("input[type=email]"), user);
+        type(By.cssSelector("input[type=password]"), password);
     }
 
-    public void sendKeysPassword(By locator) {
-        wd.findElement(locator).sendKeys("12345.com");
+    public void clickLoginButton() {
+        click(By.cssSelector("a.header-button-secondary"));
     }
-
-    public void sendKeysName(By locator) {
-        wd.findElement(locator).sendKeys("elena.telran@yahoo.com");
-    }
-
-    public void logInLink() {
-        wd.findElement(By.cssSelector("a.header-button-secondary")).click();
-    }
-
-
 
     public void logIn() {
-        ApplicationManager.openSite("https://trello.com/en");
-        logInLink();
-        fillLofinForm();
+        clickLoginButton();
+        fillLoginForm("elena.telran@yahoo.com", "12345.com");
         confirmLogin();
-        BoardHelper.goToBoard();
+        goToBoard();
     }
 
-    public void clickOnLogOutButton() {
-        wd.findElement(By.cssSelector("a.js-logout")).click();
+    public void logOut() {
+        clickOnAvatar();
+        clickLogOutButton();
+
+    }
+
+    public void clickLogOutButton() {
+        click(By.cssSelector("a.js-logout"));
     }
 
     public boolean isUserLoggedIn() {
         return isElementPresent(By.cssSelector("img.member-avatar"));
     }
 
-    public boolean isElementPresent(By by) {
-        try {
-            wd.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
-
     public void clickOnAvatar() {
-        wd.findElement(By.cssSelector("img.member-avatar")).click();
+        click(By.cssSelector("img.member-avatar"));
     }
 
 

@@ -1,4 +1,4 @@
-package manager;
+package tests;
 
 import manager.ApplicationManager;
 import org.testng.annotations.AfterSuite;
@@ -17,5 +17,4 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
-
 }
