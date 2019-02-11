@@ -32,6 +32,5 @@ public class ListCreationTest extends TestBase {
         int numberOfCards = app.getListHelper().wd.findElements(By.xpath("//*[@class='list-card-details js-card-details']")).size();
 
         Assert.assertEquals(2, numberOfCards);
-
     }
 }

@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,14 +14,19 @@ public class BoardCreationTest extends TestBase {
 
     @Test
     public void testBoardCreationFromBody() {
+        int beforeCount = app.getBoardHelper().personalBoardsCount();
 
         app.getBoardHelper().clickCreateNewBoardOnTheEndOfList();
         app.getBoardHelper().addBoardTitle("newBoard" + System.currentTimeMillis());
         app.getBoardHelper().clickCreateButton();
         app.returnToPreviousPage();
+
+        int afterCount = app.getBoardHelper().personalBoardsCount();
+
+        Assert.assertEquals(afterCount, beforeCount+1);
     }
 
-   @Test
+   @Test(priority = 1)
     public void testBoardCreationFromHeader() {
         app.getBoardHelper().clickPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoard();
@@ -29,7 +35,7 @@ public class BoardCreationTest extends TestBase {
         app.returnToPreviousPage();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testBoardCreationFromHome(){
         app.getBoardHelper().clickHomeButtonFromLeftMenu();
         app.getBoardHelper().clickCreateABoard();
