@@ -15,7 +15,7 @@ public class TestBase {
     }
 
     @AfterSuite
-    public void tearDown() {
+    public void tearDown() throws InterruptedException {
         app.stop();
     }
 }

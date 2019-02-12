@@ -13,7 +13,7 @@ public class ApplicationManager {
     static TeamHelper teamHelper;
     static SessionHelper sessionHelper;
     static ListHelper listHelper;
-    WebDriver wd;
+    static WebDriver wd;
     String browser;
 
     public ApplicationManager(String browser) {
@@ -29,7 +29,7 @@ public class ApplicationManager {
         } else if(browser.equals(BrowserType.IE)){
             wd = new InternetExplorerDriver();
         }
-        wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         openSite("https://trello.com/en");
         ApplicationManager.sessionHelper = new SessionHelper(wd);
@@ -38,7 +38,8 @@ public class ApplicationManager {
         ApplicationManager.listHelper = new ListHelper(wd);
     }
 
-    public void stop() {
+    public void stop() throws InterruptedException {
+        Thread.sleep(3000);
         wd.quit();
     }
 

@@ -19,7 +19,7 @@ public class SessionHelper extends HelperBase {
     }
 
     public void clickLoginButton() {
-        click(By.cssSelector("a.header-button-secondary"));
+        click(By.xpath("//*[contains(text(),'Log In')]"));
     }
 
     public void logIn() {

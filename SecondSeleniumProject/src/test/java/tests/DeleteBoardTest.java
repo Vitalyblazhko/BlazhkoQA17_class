@@ -1,7 +1,5 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -9,8 +7,11 @@ public class DeleteBoardTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        if (!app.getSessionHelper().isUserLoggedIn()) {
+        if(!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
+        }
+        if(app.getBoardHelper().personalBoardsCount() == 0){
+            app.getBoardHelper().boardCreationFromBody();
         }
     }
 
@@ -20,7 +21,7 @@ public class DeleteBoardTest extends TestBase {
         app.getBoardHelper().clickShowMenu();
         app.getBoardHelper().clickMoreFromMenu();
         app.getBoardHelper().clickCloseBoardFromMenu();
-
+        app.getBoardHelper().confirmBoardDeleting();
     }
 
 }
