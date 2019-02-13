@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.TestBase;
 
-public class LogInTest extends TestBase {
+public class LoginTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
