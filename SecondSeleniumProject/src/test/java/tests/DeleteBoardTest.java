@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,11 +18,18 @@ public class DeleteBoardTest extends TestBase {
 
     @Test
     public void deleteBoardFromStartOfList(){
+        int beforeCount = app.getBoardHelper().personalBoardsCount();
+
         app.getBoardHelper().clickFirstBoard();
         app.getBoardHelper().clickShowMenu();
         app.getBoardHelper().clickMoreFromMenu();
         app.getBoardHelper().clickCloseBoardFromMenu();
         app.getBoardHelper().confirmBoardDeleting();
+        app.returnToPreviousPage();
+
+        int afterCount = app.getBoardHelper().personalBoardsCount();
+
+        Assert.assertEquals(afterCount+1, beforeCount);
     }
 
 }

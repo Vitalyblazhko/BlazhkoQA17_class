@@ -26,7 +26,9 @@ public class SessionHelper extends HelperBase {
         clickLoginButton();
         fillLoginForm("elena.telran@yahoo.com", "12345.com");
         confirmLogin();
-        goToBoard();
+        if(isElementPresent(By.linkText("Go to Your Boards"))){
+            goToBoard();
+        }
     }
 
     public void logOut() {
