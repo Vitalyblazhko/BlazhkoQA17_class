@@ -29,7 +29,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public void clickPlusButtonOnHeader() {
-        click(By.cssSelector("div.header-user .icon-add"));
+        click(By.xpath("//*[@class='header-btn-icon icon-lg icon-add light']"));
     }
 
     public void addBoardTitle(String boardName) {

@@ -12,7 +12,7 @@ public class BoardCreationTest extends TestBase {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 0)
     public void testBoardCreationFromBody() {
         int beforeCount = app.getBoardHelper().personalBoardsCount();
 
@@ -23,10 +23,10 @@ public class BoardCreationTest extends TestBase {
 
         int afterCount = app.getBoardHelper().personalBoardsCount();
 
-        Assert.assertEquals(afterCount, beforeCount+1);
+        Assert.assertEquals(afterCount, 1+beforeCount);
     }
 
-    @Test(priority = 1)
+    @Test(enabled = false)
     public void testBoardCreationFromHeader() {
         app.getBoardHelper().clickPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoard();
