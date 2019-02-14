@@ -57,7 +57,6 @@ public class BoardHelper extends HelperBase {
     public void clickFirstBoard() {
         WebElement personalBoards = wd.findElement(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
         personalBoards.findElements(By.xpath(".//*[@class='board-tile-details is-badged']")).get(0).click();
-
     }
 
     public void clickShowMenu() {
