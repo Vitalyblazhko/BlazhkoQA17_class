@@ -11,7 +11,6 @@ public class LoginTest extends TestBase {
         if(app.getSessionHelper().isUserLoggedIn()){
             app.getSessionHelper().logOut();
         }
-        //comment
     }
 
     @Test

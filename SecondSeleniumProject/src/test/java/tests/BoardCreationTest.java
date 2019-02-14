@@ -12,7 +12,7 @@ public class BoardCreationTest extends TestBase {
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void testBoardCreationFromBody() {
         int beforeCount = app.getBoardHelper().personalBoardsCount();
 
@@ -26,14 +26,14 @@ public class BoardCreationTest extends TestBase {
         Assert.assertEquals(afterCount, beforeCount+1);
     }
 
-    /*@Test(priority = 1)
+    @Test(priority = 1)
     public void testBoardCreationFromHeader() {
         app.getBoardHelper().clickPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoard();
         app.getBoardHelper().addBoardTitle("newBoard" + System.currentTimeMillis());
         app.getBoardHelper().clickCreateButton();
         app.returnToPreviousPage();
-    }*/
+    }
 
     @Test(enabled = false)
     public void testBoardCreationFromHome(){
