@@ -12,6 +12,9 @@ public class ListCreationTest extends TestBase {
         if (!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
         }
+        try {
+            app.returnToHome();
+        } catch (Exception e) {}
     }
 
     @Test
@@ -32,5 +35,8 @@ public class ListCreationTest extends TestBase {
         int numberOfCards = app.getListHelper().wd.findElements(By.xpath("//*[@class='list-card-details js-card-details']")).size();
 
         Assert.assertEquals(2, numberOfCards);
+
+        app.returnToHome();
+
     }
 }

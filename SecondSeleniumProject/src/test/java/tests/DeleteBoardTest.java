@@ -9,11 +9,14 @@ public class DeleteBoardTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         if(!app.getSessionHelper().isUserLoggedIn()) {
-            app.getSessionHelper().logIn();
+                app.getSessionHelper().logIn();
         }
-        if(app.getBoardHelper().personalBoardsCount() == 0){
-            app.getBoardHelper().boardCreationFromBody();
-        }
+        try {
+            app.returnToHome();
+        } catch (Exception e) {}
+        //if(app.getBoardHelper().personalBoardsCount() == 0){
+       //    app.getBoardHelper().boardCreationFromBody();
+        //}
     }
 
     @Test
@@ -21,7 +24,11 @@ public class DeleteBoardTest extends TestBase {
         int beforeCount = app.getBoardHelper().personalBoardsCount();
 
         app.getBoardHelper().clickFirstBoard();
-        app.getBoardHelper().clickShowMenu();
+        try {
+            app.getBoardHelper().clickShowMenu();
+        } catch (Exception e) {
+        };
+
         app.getBoardHelper().clickMoreFromMenu();
         app.getBoardHelper().clickCloseBoardFromMenu();
         app.getBoardHelper().confirmBoardDeleting();
@@ -30,6 +37,7 @@ public class DeleteBoardTest extends TestBase {
         int afterCount = app.getBoardHelper().personalBoardsCount();
 
         Assert.assertEquals(afterCount+1, beforeCount);
+        app.returnToHome();
     }
 
 }

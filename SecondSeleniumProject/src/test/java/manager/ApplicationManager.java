@@ -1,5 +1,6 @@
 package manager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,7 +30,7 @@ public class ApplicationManager {
         } else if(browser.equals(BrowserType.IE)){
             wd = new InternetExplorerDriver();
         }
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         openSite("https://trello.com/en");
         ApplicationManager.sessionHelper = new SessionHelper(wd);
@@ -65,5 +66,9 @@ public class ApplicationManager {
 
     public static ListHelper getListHelper() {
         return listHelper;
+    }
+
+    public void returnToHome() {
+        wd.findElement(By.xpath("//*[@class='header-btn-icon icon-lg icon-house light']")).click();
     }
 }

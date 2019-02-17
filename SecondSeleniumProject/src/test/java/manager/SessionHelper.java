@@ -2,6 +2,7 @@ package manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class SessionHelper extends HelperBase {
 
@@ -23,12 +24,15 @@ public class SessionHelper extends HelperBase {
     }
 
     public void logIn() {
-        clickLoginButton();
-        fillLoginForm("elena.telran@yahoo.com", "12345.com");
-        confirmLogin();
-        if(isElementPresent(By.linkText("Go to Your Boards"))){
+        wd.get("https://trello.com/en");
+        try {
+            clickLoginButton();
+            fillLoginForm("elena.telran@yahoo.com", "12345.com");
+            confirmLogin();
+        } catch (Exception e) {}
+        try {
             goToBoard();
-        }
+        } catch (Exception e) {}
     }
 
     public void logOut() {
@@ -42,11 +46,13 @@ public class SessionHelper extends HelperBase {
     }
 
     public boolean isUserLoggedIn() {
-        return isElementPresent(By.cssSelector("img.member-avatar"));
+        //return isElementPresent(By.cssSelector("img.member-avatar"));
+        return isElementPresent(By.xpath("//*[@class='header-btn-icon icon-lg icon-house light']"));
     }
 
     public void clickOnAvatar() {
-        click(By.cssSelector("img.member-avatar"));
+        Actions actions = new Actions(wd);
+        actions.moveToElement(wd.findElement(By.cssSelector("img.member-avatar"))).click().perform();
     }
 
 

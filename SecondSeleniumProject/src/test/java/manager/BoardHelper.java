@@ -1,6 +1,7 @@
 package manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,10 +22,11 @@ public class BoardHelper extends HelperBase {
     }
 
     public int personalBoardsCount(){
-        wait = new WebDriverWait(wd, 20);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='icon-lg icon-member']/../../..")));
+        //wait = new WebDriverWait(wd, 20);
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='icon-lg icon-member']/../../..")));
         WebElement personalBoards = wd.findElement(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
-        int boardsCount = personalBoards.findElements(By.xpath(".//*[@class='boards-page-board-section-list-item']")).size()-1;
+        clickShowAllBoards();
+        int boardsCount = personalBoards.findElements(By.xpath(".//*[@class='boards-page-board-section-list-item']")).size();
         return boardsCount;
     }
 
@@ -33,10 +35,11 @@ public class BoardHelper extends HelperBase {
     }
 
     public void addBoardTitle(String boardName) {
-        type(By.cssSelector("input.subtle-input"), boardName);
+        type(By.xpath("//*[@placeholder='Add board title']"), boardName);
     }
 
     public void clickCreateButton() {
+        wait = new WebDriverWait(wd, 10);
         click(By.cssSelector("[class='primary']"));
         wait = new WebDriverWait(wd, 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='icon-sm icon-add']")));
@@ -60,13 +63,11 @@ public class BoardHelper extends HelperBase {
     }
 
     public void clickShowMenu() {
-        if(!isElementPresent(By.xpath("//*[@class='board-menu-header-title js-board-menu-title-text']"))) {
-            click(By.xpath("//*[@class='icon-sm icon-overflow-menu-horizontal board-header-btn-icon']"));
-        }
+        click(By.xpath("//*[@class='board-header-btn mod-show-menu js-show-sidebar']"));
     }
 
     public void clickMoreFromMenu() {
-        click(By.xpath("//*[@class='board-menu-navigation-item-link js-open-more']"));
+        click(By.xpath("//a[@class='board-menu-navigation-item-link js-open-more']"));
     }
 
     public void clickCloseBoardFromMenu() {
@@ -83,4 +84,19 @@ public class BoardHelper extends HelperBase {
         addBoardTitle("newBoard" + System.currentTimeMillis());
         clickCreateButton();
     }
+
+    public void clickShowAllBoards() {
+        if(isElementPresent(By.xpath("//*[@class='boards-page-show-all-boards quiet-button']"))){
+            click(By.xpath("//*[@class='boards-page-show-all-boards quiet-button']"));
+        }
+    }
+
+   /* public boolean checkMenu(){
+        boolean flag = false;
+
+        click(By.xpath("//a[@class='board-menu-navigation-item-link js-power-up-empty-slot']"));
+        if(isElementPresent(By.xpath("//a[@class='board-menu-navigation-item-link js-power-up-empty-slot']"))){
+            flag = true;
+        } return flag;
+    }*/
 }

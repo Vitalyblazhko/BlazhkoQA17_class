@@ -10,18 +10,26 @@ public class TeamCreationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!TestBase.app.getSessionHelper().isUserLoggedIn()){
-            TestBase.app.getSessionHelper().logIn();
-        };
+        if(!app.getSessionHelper().isUserLoggedIn()) {
+            app.getSessionHelper().logIn();
+        }
+        try {
+            app.returnToHome();
+        } catch (Exception e) {}
     }
 
     @Test
     public void teamCreationFromLeftNavMenuTest(){
-        TestBase.app.getTeamHelper().clickOnCreateTeamButtonOnNavMenu();
-        TestBase.app.getTeamHelper().fillTeamCreationForm(new Team().
+        try {
+            app.returnToHome();
+        } catch (Exception e) {}
+
+        app.getTeamHelper().clickCreateTeamButtonOnNavMenu();
+        app.getTeamHelper().fillTeamCreationForm(new Team().
                 setTeamName("newTeam" + TimeUnit.SECONDS).
                 setTeamDescr("newTeam" + TimeUnit.SECONDS));
-        TestBase.app.getTeamHelper().submitTeamCreation();
+        app.getTeamHelper().submitTeamCreation();
+        app.returnToPreviousPage();
     }
 
 }
