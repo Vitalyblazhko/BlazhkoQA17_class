@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import tests.TestBase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,26 +15,27 @@ public class TeamHelper extends HelperBase {
         super(wd);
     }
 
-    public void teamCreationFromLeftNavMenu() {
+    /*public void teamCreationFromLeftNavMenu() {
         clickCreateTeamButtonOnNavMenu();
         fillTeamCreationForm(new Team().
-                setTeamName("newTeam" + TimeUnit.SECONDS).
-                setTeamDescr("newTeam" + TimeUnit.SECONDS));
+                setNameWithTeamName("newTeam" + TimeUnit.SECONDS).
+                setWithDescription("newTeam" + TimeUnit.SECONDS));
         submitTeamCreation();
-    }
+    }*/
 
     public void fillTeamCreationForm(Team team) {
-        type(By.xpath("//*[@id='org-display-name']"), team.getTeamName());
-        type(By.xpath("//*[@id='org-desc']"), team.getTeamDescr());
+        type(By.id("org-display-name"), team.getTeamName());
+        type(By.id("org-desc"), team.getTeamDescription());
+
     }
 
     public void clickCreateTeamButtonOnNavMenu() {
-        click(By.xpath("//*[@data-test-id='home-navigation-create-team-button']"));
+        click(By.cssSelector("[data-test-id='home-navigation-create-team-button']"));
     }
 
     public void submitTeamCreation() {
-        wait = new WebDriverWait(wd, 10);
-        click(By.xpath("//*[@class='primary wide js-save']"));
+        //wait = new WebDriverWait(wd, 10);
+        click(By.xpath("//*[@value='Create']"));
     }
 
 
@@ -51,8 +51,6 @@ public class TeamHelper extends HelperBase {
     }
 
     public void clickSettings() {
-        wait = new WebDriverWait(wd, 10);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'Settings')]")));
         click(By.xpath("//*[contains(text(), 'Settings')]"));
     }
 
@@ -61,8 +59,6 @@ public class TeamHelper extends HelperBase {
     }
 
     public void submitTeamDeleting() {
-        wait = new WebDriverWait(wd, 10);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='js-confirm full negate']")));
         click(By.xpath("//*[@class='js-confirm full negate']"));
     }
 

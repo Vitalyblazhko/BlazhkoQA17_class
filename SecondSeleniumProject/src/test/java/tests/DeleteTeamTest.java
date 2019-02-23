@@ -10,9 +10,6 @@ public class DeleteTeamTest extends TestBase {
         if(!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
         }
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
         //if(app.getTeamHelper().teamCount() == 0){
        //     app.getTeamHelper().teamCreationFromLeftNavMenu();
        // }
@@ -21,15 +18,14 @@ public class DeleteTeamTest extends TestBase {
     @Test
     public void deleteTeamFromLeftNavMenu(){
         int beforeTestTeamCount = app.getTeamHelper().teamCount();
-for(int i=0; i<100; i++){
+
         app.getTeamHelper().clickFirstTeam();
         app.getTeamHelper().clickSettings();
         app.getTeamHelper().clickDeleteThisTeamQuestion();
-        app.getTeamHelper().submitTeamDeleting();}
+        app.getTeamHelper().submitTeamDeleting();
 
         int afterTestTeamCount = app.getTeamHelper().teamCount();
 
         Assert.assertEquals(afterTestTeamCount, beforeTestTeamCount-1);
-        app.returnToHome();
     }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.TeamCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:13:30" hostname="Vigole" time="3.369">
+  <properties/>
+  <testcase name="teamCreationFromLeftNavMenuTest" classname="tests.TeamCreationTest" time="3.369"/>
+  <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
+By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
+searchBy.cssSelector: [data-test-id='home-navigation-create-team-button']
+By.cssSelector: [data-test-id='home-navigation-create-team-button']found
+searchBy.id: org-display-name
+By.id: org-display-namefound
+searchBy.id: org-display-name
+By.id: org-display-namefound
+searchBy.id: org-display-name
+By.id: org-display-namefound
+searchBy.id: org-desc
+By.id: org-descfound
+searchBy.id: org-desc
+By.id: org-descfound
+searchBy.id: org-desc
+By.id: org-descfound
+searchBy.xpath: //*[@value='Create']
+By.xpath: //*[@value='Create']found
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -2,7 +2,7 @@ package models;
 
 public class Team {
     private String teamName;
-    private String teamDescr;
+    private String description;
 
     /*public Team(String teamName, String teamDescr) {
         this.teamName = teamName;
@@ -11,13 +11,13 @@ public class Team {
 
     public Team() {}*/
 
-    public Team setTeamName(String teamName) {
+    public Team setNameWithTeamName(String teamName) {
         this.teamName = teamName;
         return this;
     }
 
-    public Team setTeamDescr(String teamDescr) {
-        this.teamDescr = teamDescr;
+    public Team setWithDescription(String description) {
+        this.description = description;
         return this;
     }
 
@@ -25,7 +25,7 @@ public class Team {
         return teamName;
     }
 
-    public String getTeamDescr() {
-        return teamDescr;
+    public String getTeamDescription() {
+        return description;
     }
 }

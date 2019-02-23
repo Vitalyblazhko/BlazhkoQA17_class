@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.ListCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:14:14" hostname="Vigole" time="3.42">
+  <properties/>
+  <testcase name="testListCreationViaBoardCreationFromHeader" classname="tests.ListCreationTest" time="3.42"/>
+  <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
+By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
+searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-add light']
+By.xpath: //*[@class='header-btn-icon icon-lg icon-add light']found
+searchBy.cssSelector: .js-new-board
+By.cssSelector: .js-new-boardfound
+searchBy.xpath: //*[@placeholder='Add board title']
+By.xpath: //*[@placeholder='Add board title']found
+searchBy.xpath: //*[@placeholder='Add board title']
+By.xpath: //*[@placeholder='Add board title']found
+searchBy.xpath: //*[@placeholder='Add board title']
+By.xpath: //*[@placeholder='Add board title']found
+searchBy.cssSelector: [class='primary']
+By.cssSelector: [class='primary']found
+searchBy.xpath: //*[@class='icon-sm icon-add']
+By.xpath: //*[@class='icon-sm icon-add']found
+searchBy.xpath: //*[@class='icon-sm icon-add']
+By.xpath: //*[@class='icon-sm icon-add']found
+searchBy.xpath: //*[@class='list-name-input']
+By.xpath: //*[@class='list-name-input']found
+searchBy.xpath: //*[@class='list-name-input']
+By.xpath: //*[@class='list-name-input']found
+searchBy.xpath: //*[@class='list-name-input']
+By.xpath: //*[@class='list-name-input']found
+searchBy.xpath: //*[@type='submit']
+By.xpath: //*[@type='submit']found
+searchBy.xpath: //*[@class='js-add-a-card']
+By.xpath: //*[@class='js-add-a-card']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='primary confirm mod-compact js-add-card']
+By.xpath: //*[@class='primary confirm mod-compact js-add-card']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='list-card-composer-textarea js-card-title']
+By.xpath: //*[@class='list-card-composer-textarea js-card-title']found
+searchBy.xpath: //*[@class='primary confirm mod-compact js-add-card']
+By.xpath: //*[@class='primary confirm mod-compact js-add-card']found
+searchBy.xpath: //*[@class='list-card-details js-card-details']
+By.xpath: //*[@class='list-card-details js-card-details']found
+searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
+By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

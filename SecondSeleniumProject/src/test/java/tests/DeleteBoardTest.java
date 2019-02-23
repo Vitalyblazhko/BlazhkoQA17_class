@@ -11,9 +11,6 @@ public class DeleteBoardTest extends TestBase {
         if(!app.getSessionHelper().isUserLoggedIn()) {
                 app.getSessionHelper().logIn();
         }
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
         //if(app.getBoardHelper().personalBoardsCount() == 0){
        //    app.getBoardHelper().boardCreationFromBody();
         //}

@@ -12,16 +12,10 @@ public class BoardCreationTest extends TestBase {
         if (!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
         }
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
     }
 
     @Test
     public void testBoardCreationFromBody(){
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
         app.getBoardHelper().clickShowAllBoards();
         int beforeCount = app.getBoardHelper().personalBoardsCount();
 
@@ -33,9 +27,8 @@ public class BoardCreationTest extends TestBase {
         app.getBoardHelper().clickShowAllBoards();
         int afterCount = app.getBoardHelper().personalBoardsCount();
 
-        app.getBoardHelper().wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         Assert.assertEquals(afterCount, beforeCount+1);
-        app.returnToHome();
+
     }
 
     /*@Test(enabled = false)

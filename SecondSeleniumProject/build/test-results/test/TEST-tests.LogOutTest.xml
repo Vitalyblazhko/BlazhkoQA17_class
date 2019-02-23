@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LogOutTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:14:38" hostname="Vigole" time="9.791">
+  <properties/>
+  <testcase name="logOutTest" classname="tests.LogOutTest" time="9.791"/>
+  <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
+By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
+searchBy.cssSelector: img.member-avatar
+By.cssSelector: img.member-avatarfound
+!!!***********************!!!
+org.openqa.selenium.UnsupportedCommandException: actions
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VIGOLE', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+screenshot: screenshot-1550924078903.png
+!!!***********************!!!
+searchBy.cssSelector: a.js-logout
+By.cssSelector: a.js-logoutfound
+searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
+!!!***********************!!!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='header-btn-icon icon-lg icon-house light']"}
+  (Session info: chrome=72.0.3626.109)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VIGOLE', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\Vital\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64371}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}
+Session ID: ac412f39b4d1925604b513ed76aaab8e
+*** Element info: {Using=xpath, value=//*[@class='header-btn-icon icon-lg icon-house light']}
+screenshot: screenshot-1550924088006.png
+!!!***********************!!!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

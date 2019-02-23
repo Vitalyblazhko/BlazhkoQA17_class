@@ -3,9 +3,12 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import tests.TestBase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +17,7 @@ public class ApplicationManager {
     static TeamHelper teamHelper;
     static SessionHelper sessionHelper;
     static ListHelper listHelper;
-    static WebDriver wd;
+    public static EventFiringWebDriver wd;
     String browser;
 
     public ApplicationManager(String browser) {
@@ -24,13 +27,18 @@ public class ApplicationManager {
     public void start() {
         //String browser = BrowserType.CHROME;
         if(browser.equals(BrowserType.CHROME)){
-            wd = new ChromeDriver();
+            wd = new EventFiringWebDriver(new ChromeDriver());
         } else if(browser.equals(BrowserType.FIREFOX)){
-            wd = new FirefoxDriver();
+            wd = new EventFiringWebDriver(new FirefoxDriver());
         } else if(browser.equals(BrowserType.IE)){
-            wd = new InternetExplorerDriver();
+            wd = new EventFiringWebDriver(new InternetExplorerDriver());
+        } else if(browser.equals(BrowserType.EDGE)){
+            wd = new EventFiringWebDriver(new EdgeDriver());
         }
-        wd.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+
+        wd.register(new TestBase.MyListener());
+
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         openSite("https://trello.com/en");
         ApplicationManager.sessionHelper = new SessionHelper(wd);
@@ -69,6 +77,8 @@ public class ApplicationManager {
     }
 
     public void returnToHome() {
-        wd.findElement(By.xpath("//*[@class='header-btn-icon icon-lg icon-house light']")).click();
+        try {
+            wd.findElement(By.xpath("//*[@class='header-btn-icon icon-lg icon-house light']")).click();
+        } catch (Exception e) {}
     }
 }

@@ -10,7 +10,7 @@ public class LogOutTest extends TestBase {
     public void ensurePrecondition(){
         if(!app.getSessionHelper().isUserLoggedIn()){
             app.getSessionHelper().logIn();
-        };
+        }
     }
 
     @Test

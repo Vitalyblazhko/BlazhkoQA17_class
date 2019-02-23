@@ -12,13 +12,10 @@ public class ListCreationTest extends TestBase {
         if (!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
         }
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
     }
 
     @Test
-    public void testListCreationViaBoardCreationFromHeader() throws InterruptedException {
+    public void testListCreationViaBoardCreationFromHeader() {
         app.getBoardHelper().clickPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoard();
         app.getBoardHelper().addBoardTitle("newBoard" + System.currentTimeMillis());

@@ -13,21 +13,15 @@ public class TeamCreationTest extends TestBase {
         if(!app.getSessionHelper().isUserLoggedIn()) {
             app.getSessionHelper().logIn();
         }
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
     }
 
     @Test
     public void teamCreationFromLeftNavMenuTest(){
-        try {
-            app.returnToHome();
-        } catch (Exception e) {}
 
         app.getTeamHelper().clickCreateTeamButtonOnNavMenu();
         app.getTeamHelper().fillTeamCreationForm(new Team().
-                setTeamName("newTeam" + TimeUnit.SECONDS).
-                setTeamDescr("newTeam" + TimeUnit.SECONDS));
+                setNameWithTeamName("newTeam" + TimeUnit.SECONDS).
+                setWithDescription("description of the new team"));
         app.getTeamHelper().submitTeamCreation();
         app.returnToPreviousPage();
     }

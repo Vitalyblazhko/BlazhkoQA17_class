@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class BoardHelper extends HelperBase {
 
     public BoardHelper(WebDriver wd) {
@@ -35,11 +37,12 @@ public class BoardHelper extends HelperBase {
     }
 
     public void addBoardTitle(String boardName) {
+        /*wait = new WebDriverWait(wd, 5);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@placeholder='Add board title']")));*/
         type(By.xpath("//*[@placeholder='Add board title']"), boardName);
     }
 
     public void clickCreateButton() {
-        wait = new WebDriverWait(wd, 10);
         click(By.cssSelector("[class='primary']"));
         wait = new WebDriverWait(wd, 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='icon-sm icon-add']")));
