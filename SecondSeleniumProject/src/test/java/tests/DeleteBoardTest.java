@@ -34,7 +34,7 @@ public class DeleteBoardTest extends TestBase {
         int afterCount = app.getBoardHelper().personalBoardsCount();
 
         Assert.assertEquals(afterCount+1, beforeCount);
-        app.returnToHome();
+        app.getNavigationHelper().returnToHome();
     }
 
 }

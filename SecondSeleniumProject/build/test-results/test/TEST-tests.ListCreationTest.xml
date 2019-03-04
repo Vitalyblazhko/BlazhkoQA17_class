@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.ListCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:14:14" hostname="Vigole" time="3.42">
+<testsuite name="tests.ListCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-25T15:53:09" hostname="LenovoUser-PC" time="3.342">
   <properties/>
-  <testcase name="testListCreationViaBoardCreationFromHeader" classname="tests.ListCreationTest" time="3.42"/>
+  <testcase name="testListCreationViaBoardCreationFromHeader" classname="tests.ListCreationTest" time="3.342"/>
   <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
 By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
 searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-add light']

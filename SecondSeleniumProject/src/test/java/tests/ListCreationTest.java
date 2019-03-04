@@ -33,7 +33,7 @@ public class ListCreationTest extends TestBase {
 
         Assert.assertEquals(2, numberOfCards);
 
-        app.returnToHome();
+        app.getNavigationHelper().returnToHome();
 
     }
 }

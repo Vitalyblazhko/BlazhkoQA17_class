@@ -17,7 +17,8 @@ public class ApplicationManager {
     static TeamHelper teamHelper;
     static SessionHelper sessionHelper;
     static ListHelper listHelper;
-    public static EventFiringWebDriver wd;
+    static NavigationHelper navigationHelper;
+    static EventFiringWebDriver wd;
     String browser;
 
     public ApplicationManager(String browser) {
@@ -41,10 +42,11 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.manage().window().maximize();
         openSite("https://trello.com/en");
-        ApplicationManager.sessionHelper = new SessionHelper(wd);
-        ApplicationManager.boardHelper = new BoardHelper(wd);
-        ApplicationManager.teamHelper = new TeamHelper(wd);
-        ApplicationManager.listHelper = new ListHelper(wd);
+        sessionHelper = new SessionHelper(wd);
+        boardHelper = new BoardHelper(wd);
+        teamHelper = new TeamHelper(wd);
+        listHelper = new ListHelper(wd);
+        navigationHelper = new NavigationHelper(wd);
     }
 
     public void stop() throws InterruptedException {
@@ -76,9 +78,8 @@ public class ApplicationManager {
         return listHelper;
     }
 
-    public void returnToHome() {
-        try {
-            wd.findElement(By.xpath("//*[@class='header-btn-icon icon-lg icon-house light']")).click();
-        } catch (Exception e) {}
+    public static NavigationHelper getNavigationHelper() {
+        return navigationHelper;
     }
+
 }

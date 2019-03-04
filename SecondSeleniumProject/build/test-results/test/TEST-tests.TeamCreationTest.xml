@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.TeamCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:13:30" hostname="Vigole" time="3.369">
+<testsuite name="tests.TeamCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-25T15:52:28" hostname="LenovoUser-PC" time="3.139">
   <properties/>
-  <testcase name="teamCreationFromLeftNavMenuTest" classname="tests.TeamCreationTest" time="3.369"/>
+  <testcase name="teamCreationFromLeftNavMenuTest" classname="tests.TeamCreationTest" time="3.139"/>
   <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
 By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
 searchBy.cssSelector: [data-test-id='home-navigation-create-team-button']

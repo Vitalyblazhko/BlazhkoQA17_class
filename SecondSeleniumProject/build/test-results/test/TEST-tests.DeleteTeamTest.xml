@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.DeleteTeamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-23T12:14:34" hostname="Vigole" time="3.475">
+<testsuite name="tests.DeleteTeamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-25T15:53:27" hostname="LenovoUser-PC" time="3.898">
   <properties/>
-  <testcase name="deleteTeamFromLeftNavMenu" classname="tests.DeleteTeamTest" time="3.475"/>
+  <testcase name="deleteTeamFromLeftNavMenu" classname="tests.DeleteTeamTest" time="3.898"/>
   <system-out><![CDATA[searchBy.xpath: //*[@class='header-btn-icon icon-lg icon-house light']
 By.xpath: //*[@class='header-btn-icon icon-lg icon-house light']found
 searchBy.cssSelector: [data-test-id^='home-team-tab-section']
