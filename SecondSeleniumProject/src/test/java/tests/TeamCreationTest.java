@@ -1,5 +1,6 @@
 package tests;
 
+import dataProvider.StaticProvider;
 import models.Team;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,16 +13,6 @@ import java.util.List;
 
 public class TeamCreationTest extends TestBase {
 
-    @DataProvider
-    public Iterator <Object[]> validTeam() {
-        List<Object[]> listOfTeams = new ArrayList<>();
-        listOfTeams.add(new Object[]{"test1","description"});
-        listOfTeams.add(new Object[]{"test2","description description"});
-        listOfTeams.add(new Object[]{"test3","description description description"});
-        return listOfTeams.iterator();
-
-    }
-
     @BeforeMethod
     public void ensurePrecondition(){
         if(!app.getSessionHelper().isUserLoggedIn()) {
@@ -29,13 +20,22 @@ public class TeamCreationTest extends TestBase {
         }
     }
 
-    @Test(dataProvider = "validTeam")
+    /*@Test(dataProvider = "validTeam", dataProviderClass = StaticProvider.class)
     public void teamCreationFromLeftNavMenuTest(String teamName, String description){
 
         app.getTeamHelper().clickCreateTeamButtonOnNavMenu();
         app.getTeamHelper().fillTeamCreationForm(new Team().
                 setNameWithTeamName(teamName).
                 setWithDescription(description));
+        app.getTeamHelper().submitTeamCreation();
+        app.returnToPreviousPage();
+    }*/
+
+    @Test(dataProvider = "validTeamFromCsv", dataProviderClass = StaticProvider.class)
+    public void teamCreationFromLeftNavMenuTest(Team team){
+
+        app.getTeamHelper().clickCreateTeamButtonOnNavMenu();
+        app.getTeamHelper().fillTeamCreationForm(team);
         app.getTeamHelper().submitTeamCreation();
         app.returnToPreviousPage();
     }
